@@ -27,5 +27,7 @@ RUN . ~/.profile
 
 WORKDIR /usr/share/geoserver/bin
 
+RUN apt-get install -y tomcat9-docs tomcat9-examples 
+
 CMD ["bash"]
 ENTRYPOINT ["sh", "startup.sh"]
